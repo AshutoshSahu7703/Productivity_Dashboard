@@ -1,0 +1,87 @@
+:root{
+    --pri:#222831;
+    --sec:#393E46;
+    --tri:#00ADB5;
+    --tri2:#EEEEEE;
+}
+@font-face{
+    font-family:normal;
+    src: url(./fonts/fonnts.com-Aeonik-Regular.ttf);
+}
+@font-face{
+    font-family:medium;
+    src: url(./fonts/Aonic-Medium.ttf);
+}
+@font-face{
+    font-family:bold;
+    src: url(./fonts/fonnts.com-Aeonik-Bold.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: medium;
+    color: var(--tri2);
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+nav{
+    height: 40px;
+    width: 100%;
+    background-color: var(--pri);
+}
+.allElem{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--sec);
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+    position: absolute;
+}
+.elem{
+    background-color: var(--tri);
+    border-radius: 10px;
+    height: 350px;
+    width: 280px;
+    overflow: hidden;
+    position: relative;
+    transition: all ease 0.3s;
+}
+.elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.elem h2{
+    position: absolute;
+    bottom: 1%;
+    left: 25%;
+    text-align: center;
+    font-weight: 500;
+}
+.elem:active{
+    scale: 0.97;
+}
+.elem:hover{
+    cursor: pointer;
+}
+.fullElem{
+    height: 100%;
+    width: 100%;
+    background-color: var(--sec);
+    display: none;
+    position: absolute;
+}
+.back{
+    position: absolute;
+    right: 5%;
+    padding: 5px 6px;
+    background-color: red;
+    border-radius: 45%;
+    font-size: 15px;
+    border: none;
+}
