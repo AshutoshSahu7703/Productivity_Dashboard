@@ -68,6 +68,8 @@ nav{
 }
 .elem:hover{
     cursor: pointer;
+    scale: 1.05;
+    box-shadow: 5px 5px 15px rgb(0, 0, 0);
 }
 .fullElem{
     height: 100%;
