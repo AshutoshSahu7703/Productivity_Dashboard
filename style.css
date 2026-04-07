@@ -86,4 +86,5 @@ nav{
     border-radius: 45%;
     font-size: 15px;
     border: none;
+    cursor: pointer;
 }
