@@ -2,7 +2,10 @@
     --pri:#222831;
     --sec:#393E46;
     --tri:#00ADB5;
-    --tri2:#EEEEEE;
+    --tri2:#ffffffc1;
+    --add:rgb(53, 53, 207);
+    --complete: green;
+    --tri3: aquamarine;
 }
 @font-face{
     font-family:normal;
@@ -81,10 +84,113 @@ nav{
 .back{
     position: absolute;
     right: 5%;
-    padding: 5px 6px;
-    background-color: red;
-    border-radius: 45%;
-    font-size: 15px;
+    padding: 5px 5px;
+    margin-top: 25px;
+    background-color: rgb(255, 44, 44);
+    border-radius: 5px;
+    font-size: 25px;
     border: none;
     cursor: pointer;
+     font-family: 'Times New Roman', Times, serif;
+}
+.to-do-full-page h2{
+    font-size: 60px;
+    margin-top: 10px;
+    margin-left: 50px;
+    font-weight: 200;
+}
+.to-do-full-page .to-do-container{
+    height: 550px;
+    width: 1300px;
+    margin-left: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.to-do-full-page .to-do-container .addTask{
+    width: 33%;
+    height: 100%;
+    background-color: var(--tri);
+    border-radius: 20px;
+}
+.to-do-full-page .to-do-container .allTask{
+    width: 65%;
+    height: 100%;
+    background-color: var(--tri);
+    border-radius: 20px;
+    padding: 20px;
+    overflow: auto;
+}
+.to-do-full-page .to-do-container .addTask form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px;
+}
+.to-do-full-page .to-do-container .addTask form input{
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: var(--tri2);
+    color: var(--sec);
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.to-do-full-page .to-do-container .addTask form textarea{
+    width: 100%;
+    height: 350px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: var(--sec);
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.to-do-full-page .to-do-container .addTask form button{
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: var(--sec);
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    background-color: var(--add);
+    transition: all ease 0.4s;
+}
+.to-do-full-page .to-do-container .addTask form button:active{
+    scale: 0.95;
+}
+.to-do-full-page .to-do-container .allTask .task{
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: var(--sec);
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: space-between;
+}
+.to-do-full-page .to-do-container .allTask .task button{
+    width: 300px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: var(--sec);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    background-color: var(--complete);
+}
+.to-do-full-page .to-do-container .allTask .task h4{
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
 }
